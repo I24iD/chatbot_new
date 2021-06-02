@@ -2,7 +2,7 @@ import random
 
 zufallsantworten = ["Oh wirklich...", "Interessant", "Das kann man so sehen.", "Ich verstehe..."]
 reaktionen = {"hallo": "aber hallo",
-		"geht": " Was verstehst Du darunter?",
+		"geht": "Was verstehst Du darunter?",
 		"schmeckt": "Ich habe keinen Geschmackssinn"}
 
 print("Willkommen beim Chatbot (V1)")
