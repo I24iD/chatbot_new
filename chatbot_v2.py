@@ -70,6 +70,8 @@ def main():
         nutzereingabe = ""
         while nutzereingabe == "":
             nutzereingabe = input("Ihre Frage oder Antwort: ")
+        if nutzereingabe == "bye":
+            break
         bot.set_Message(nutzereingabe)
         print(bot.get_Response())
 
