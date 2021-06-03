@@ -3,19 +3,18 @@
 
 import random
 
+
 class Chatbot:
     """ Eine Klasse für einen Chatbot
         Verwendung:
         bot = Chatbot(reaktionen, zufallsantworten)
     """
 
-    
     def __init__(self, reaktionen, zufallsantworten):
         # Konstruktor der Klasse
         self.__reaktionen = dict(reaktionen)
         self.__zufallsantworten = list(zufallsantworten)
 
-    
     def set_Message(self, message):
         """ set_Message
             wird verwendet, um dem Chatbot die Eingabe des Benutzer zu übergeben
@@ -24,7 +23,6 @@ class Chatbot:
         """
         self.__message = str(message)
 
-    
     def get_Response(self):
         """ get_Response
             wird verwendet, um dem Chatbot die richtige Antwort zu entlocken
@@ -51,9 +49,7 @@ def main():
                         "Interessant",
                         "Das kann man so sehen",
                         "Ich verstehe"]
-    reaktionen = {"hallo": "aber hallo",
-                    "geht": "was verstehst du darunter?",
-                    "schmeckt": "Ich habe keinen Geschmackssinn!"}
+    reaktionen = {"hallo": "aber hallo", "geht": "was verstehst du darunter?", "schmeckt": "Ich habe keinen Geschmackssinn!"}
 
     # Ausgabe Begrüßung
     print("Willkommen beim Chatbot-V2")
@@ -77,6 +73,7 @@ def main():
 
     # Ausgabe Verabschiedung
     print("Bis zum nächsten Mal!")
+
 
 if __name__ == "__main__":
     main()
